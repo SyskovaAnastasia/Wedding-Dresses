@@ -1,0 +1,996 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara&family=Playfair+Display:wght@400..900&display=swap');
+
+
+.hind-vadodara-regular {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-display-regular {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.playfair-display-medium {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+html,
+body {
+    margin: 0 auto;
+    scroll-behavior: smooth;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 34px;
+}
+
+h3 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+}
+
+h5 {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+}
+
+/* Шапка */
+.header {
+    padding: 30px 0;
+    background-color: rgb(51, 44, 35);
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header__conteiner {
+    display: flex;
+    align-items: center;
+    gap: 280px
+}
+
+.header__menu {
+
+    background-color: rgb(83, 71, 57);
+    opacity: 70%;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+
+}
+
+.header__nav {
+    /* margin-top: -10px; */
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.header__list {
+    display: flex;
+    gap: 58px
+}
+
+.header-a:hover,
+.header-a:focus {
+    cursor: pointer;
+    color: rgb(240, 223, 198);
+    transition: all 0.5s ease;
+}
+
+.main {}
+
+/* welcome */
+
+.welcome {
+    margin-top: -70px;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-image: url("./images/header-image.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    padding: 250px 0 0px 0;
+    z-index: -1;
+}
+
+.welcome__subtitle {
+    color: white;
+    margin-bottom: 40px;
+    margin-top: 0;
+    width: 470px;
+}
+
+.welcome__desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: white;
+    margin-bottom: 40px;
+    width: 388px;
+}
+
+.btn {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    color: black;
+    width: 206px;
+    height: 52px;
+    background-color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.5s ease;
+}
+
+.btn:hover,
+.btn:focus {
+    cursor: pointer;
+    background-color: rgb(223, 223, 223);
+    top: 3px;
+    transition-duration: 1s;
+}
+
+/* trend-block */
+.trend {
+    padding: 90px 0;
+}
+
+.trend__desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.trend__block {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+@keyframes fade {
+    from {
+        translate: -25vw;
+        opacity: 0;
+    }
+}
+
+.fade-in {
+    animation-name: fade;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+    view-timeline-name: --fade-in-text;
+    animation-timeline: --fade-in-text;
+    animation-range: 20% 40%;
+
+}
+
+.trend__card {
+    width: 273px;
+}
+
+.trend__img {
+    max-width: 100%;
+    height: 358px;
+    object-fit: cover;
+}
+
+.trend__img:hover {
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+
+}
+
+.trend__card-title {
+    margin: 5px 0;
+}
+
+.trend__card-deck {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgba(118, 117, 117, 1);
+    margin: 0;
+}
+
+/* New */
+.new__desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    margin-top: 8px;
+}
+
+.new__content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+
+}
+
+.new__img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.new__img1 {
+    height: 355px;
+    margin-top: 160px;
+    padding-right: 5px;
+}
+
+
+.new__img3 {
+    height: 355px;
+    margin-top: 52px;
+    padding-left: 5px;
+}
+
+/* Wedding Accessories */
+.accessories {
+    padding: 90px 0;
+    display: flex;
+    justify-content: space-between;
+    height: 448px;
+}
+
+.accessories__text {
+    width: 364px;
+}
+
+.accessories__subtitle {
+    margin: 0;
+    margin-bottom: 60px;
+}
+
+.accessories__desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.btn__main {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(155, 140, 124, 1);
+    width: 160px;
+    padding: 10px 50px;
+    position: relative;
+}
+
+.btn__main:hover,
+.btn__main:focus {
+    cursor: pointer;
+    background-color: rgb(177, 163, 148);
+    top: 3px;
+    transition-duration: 1s;
+
+}
+
+.accessories__block {
+    display: flex;
+}
+
+.accessories__card {
+    margin: 0 16px;
+}
+
+.accessories__img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.accessories__img:hover {
+    transform: translate(0, -10px);
+    transition: all 0.5s ease;
+
+}
+
+.accessories__card-title {
+    margin: 5px 0;
+}
+
+.accessories__card-desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: rgba(118, 117, 117, 1);
+    margin: 0;
+}
+
+/* Sign Up */
+.sign-up {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.sign-up__img {
+    max-width: 100%;
+}
+
+.sign-up__img:hover {
+
+    transform: scale(1.05);
+    transition: all 0.5s ease;
+}
+
+.sign-up__block {
+    width: 555px;
+}
+
+.sign-up__subtitle {
+    margin: 0;
+}
+
+.sign-up__subtitle-color {
+    margin: 0;
+    margin-bottom: 86px;
+    color: rgba(155, 140, 124, 1);
+}
+
+.sign-up__form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sign-up__form__info {
+    height: 180px;
+    margin-bottom: 86px;
+}
+
+@keyframes fade2 {
+    from {
+        translate: 25vw;
+        opacity: 0;
+    }
+}
+
+.fade-in2 {
+    animation-name: fade2;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+    view-timeline-name: --fade-in-text;
+    animation-timeline: --fade-in-text;
+    animation-range: 20% 40%;
+
+}
+
+.form__group {
+    position: relative;
+}
+
+.sign-up__date-time {}
+
+.form__label-name {
+    position: absolute;
+    bottom: 40px;
+    left: 2px;
+    z-index: -1;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: rgba(183, 183, 183, 1);
+    transition: 0.3s;
+}
+
+.form__label-phone {
+    position: absolute;
+    bottom: 50px;
+    left: 2px;
+    z-index: -1;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: rgba(183, 183, 183, 1);
+    transition: 0.3s;
+}
+
+.form__name {
+    width: 431px;
+    height: 23px;
+    margin-bottom: 40px;
+    padding: 0 0 5px 0;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid rgba(183, 183, 183, 1);
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form__name:focus {
+    border-bottom: 1px solid rgba(155, 140, 124, 1);
+}
+
+.form__name:focus~.form__label-name,
+.form__name:not(:placeholder-shown)~.form__label-name {
+    top: -18px;
+    font-size: 12px;
+}
+
+.form__phone {
+    width: 431px;
+    height: 23px;
+    margin-bottom: 50px;
+    padding: 0 0 5px 0;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid rgba(183, 183, 183, 1);
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form__phone:focus {
+    border-bottom: 1px solid rgba(155, 140, 124, 1);
+}
+
+.form__phone:focus~.form__label-phone,
+.form__phone:not(:placeholder-shown)~.form__label-phone {
+    top: -18px;
+    font-size: 12px;
+}
+
+
+.form__date {
+    width: 150px;
+    height: 30px;
+    margin-right: 103px;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    border: 1px solid rgba(183, 183, 183, 1);
+    padding: 5px;
+    text-align: center;
+    color: rgba(183, 183, 183, 1);
+}
+
+::-webkit-calendar-picker-indicator {
+    background-color: rgba(183, 183, 183, 1);
+    padding: 5px;
+    border-radius: 3px;
+    opacity: 0.9;
+}
+
+.form__time {
+    width: 150px;
+    height: 30px;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    border: 1px solid rgba(183, 183, 183, 1);
+    padding: 5px;
+    text-align: center;
+    color: rgba(183, 183, 183, 1);
+}
+
+input[type='date'] {
+    background: transparent;
+}
+
+::-webkit-calendar-picker-indicator {
+    opacity: 0.5;
+}
+
+
+.btn__form {
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    color: white;
+    background-color: rgba(155, 140, 124, 1);
+    width: 170px;
+    margin-top: -30px;
+    padding: 10px 50px;
+    border: none;
+    position: relative;
+    text-align: center;
+}
+
+.btn__form:focus,
+.btn__form:hover {
+    cursor: pointer;
+    background-color: rgb(177, 163, 148);
+    top: 3px;
+    transition-duration: 1s;
+}
+
+.success {
+
+    margin-top: -65px;
+    margin-left: 450px;
+    position: absolute;
+}
+
+.error {
+    margin-top: -80px;
+    margin-left: 450px;
+    position: absolute;
+}
+
+
+
+/* Follow in instagram */
+.follow {
+    padding: 90px 0;
+}
+
+.follow__desc {
+    margin: 0;
+    margin-top: 8px;
+    text-align: center;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(92, 92, 92, 1);
+    margin-bottom: 40px;
+}
+
+.follow__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.follow__img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.follow__img:hover {
+    transform: translate(0, 10px);
+    transition: all 0.5s ease;
+
+}
+
+@keyframes fade3 {
+    from {
+
+        opacity: 0;
+    }
+}
+
+.fade-in3 {
+    animation-name: fade3;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+
+    view-timeline-name: --fade-in-text;
+    animation-timeline: --fade-in-text;
+    animation-range: 10% 40%;
+
+}
+
+/* email */
+.email {
+    margin-bottom: 90px;
+}
+
+.email__look {
+    width: 350px;
+    height: 225px;
+    border-radius: 15px;
+    padding-top: 30px;
+    border: 3px solid rgb(194, 182, 170);
+
+}
+
+.email__subtitle {
+    margin-bottom: 40px;
+}
+
+.email__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.form__email {
+
+    width: 264px;
+    height: 23px;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    border: none;
+    border-bottom: 1px solid rgba(183, 183, 183, 1);
+    background-color: transparent;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form__label-email {
+    position: absolute;
+    bottom: 30px;
+    left: 2px;
+    z-index: -1;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: rgba(183, 183, 183, 1);
+    transition: 0.3s;
+}
+
+.form__email:focus {
+    border-bottom: 1px solid rgba(155, 140, 124, 1);
+}
+
+.form__email:focus~.form__label-email,
+.form__email:not(:placeholder-shown)~.form__label-email {
+    top: -18px;
+    font-size: 12px;
+}
+
+.btn__email {
+    margin-top: 10px;
+
+}
+
+.success_email {
+
+    position: absolute;
+    margin-top: -25px;
+}
+
+.error_email {
+    position: absolute;
+    margin-top: -25px;
+
+}
+
+/* footer */
+
+.footer {
+    max-width: 100%;
+    height: fit-content;
+    background-color: rgba(240, 240, 240, 1);
+    padding: 30px 0;
+}
+
+.footer__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fotter__desc {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    text-align: center;
+}
+
+.fotter__copyright {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.footer__policy {
+    margin: 0;
+    margin-top: 5px;
+}
+
+.fotter__phone {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    margin: 0;
+}
+
+.footer__mail {
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.icon-2 {
+    margin: 0 5px;
+}
+
+
+
+@media (max-width: 1200px) {
+    .sign-up {
+        justify-content: center;
+    }
+
+    .sign-up__block {
+        padding-left: 10px;
+        padding-top: 20px;
+    }
+
+    .trend__img {
+        padding-top: 10px;
+    }
+
+    .follow__img {
+        padding: 0 10px;
+        padding-top: 20px;
+
+    }
+}
+
+@media (max-width: 992px) {
+    .welcome {
+        background-position: center;
+
+    }
+
+    .welcome__subtitle {
+        background-color: rgba(54, 46, 37, 0.3);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .welcome__desc {
+        background-color: rgba(54, 46, 37, 0.3);
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+    .header__menu {
+        padding: 10px;
+    }
+
+    .new__img {
+        width: 273px;
+        height: 355px;
+    }
+
+    .new__img1 {
+        margin: 0;
+
+    }
+
+    .new__img3 {
+        margin: 0;
+
+    }
+
+    .follow__block {
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 890px) {
+
+    .header__conteiner {
+        gap: 80px;
+    }
+
+    .accessories {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .accessories__block {
+        padding-top: 60px;
+
+    }
+
+    .sign-up {
+        margin-top: 400px;
+
+    }
+
+}
+
+@media (max-width: 818px) {
+    
+
+    .trend__block {
+
+        justify-content: center;
+
+    }
+
+    .trend__card {
+
+        margin: 10px 10px;
+    }
+
+    .new__content {
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .new__img3 {
+        margin-top: 20px;
+    }
+
+    .new__img1 {
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header__logo {
+        width: 100px;
+    }
+    .welcome__desc {
+        font-size: 20px;
+    }
+    .btn {
+        font-size: 22px;
+    }
+    .trend__subtitle {
+        font-size: 26px;
+    }
+    .trend__desc {
+        font-size: 20px;
+    }
+    .trend__card-title {
+        font-size: 20px;
+    }
+    .trend__card-deck {
+        font-size: 20px;
+    }
+    .new__subtitle {
+        font-size: 26px;
+    }
+    .new__desc {
+        font-size: 20px;
+    }
+    .accessories__desc {
+        font-size: 20px;
+    }
+    .btn__main {
+        font-size: 20px;
+    }
+    .form__name {
+        font-size: 20px;
+    }
+    .accessories__card-title {
+        font-size: 20px;
+    }
+    .accessories__card-desc {
+        font-size: 20px;
+    }
+    .form__date {
+        font-size: 20px;
+    }
+    .form__label-name {
+        font-size: 20px;
+    }
+    .form__label-phone {
+        font-size: 20px;
+    }
+    .form__date {
+        font-size: 20px;
+    }
+    .form__time {
+        font-size: 20px;
+    }
+    .btn__form {
+        font-size: 20px;
+    }
+    .folow__subtitle {
+        font-size: 26px;
+    }
+    .follow__desc {
+        font-size: 20px;
+    }
+    .email__subtitle {
+        font-size: 26px;
+    }
+    .form__email {
+        font-size: 20px;
+    }
+    .email__look {
+        width: 400px;
+    }
+    .form__label-email {
+        font-size: 20px;
+    }
+    .footer__logo {
+        width: 120px;
+    }
+    
+    .icon-1 {
+        width: 30px;
+    }
+    .icon-2 {
+        width: 30px;
+    }
+    .icon-3 {
+        width: 30px;
+    }
+    .icons {
+        margin-top: 10px;
+    }
+}

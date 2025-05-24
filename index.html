@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Dresses</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header class="header header__menu">
+        <div class="conteiner header__conteiner">
+            <img src="./images/Logo.svg" alt="" class="header__logo">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li><a class="header-a" href="#trend">Trending Now</a></li>
+                    <li><a class="header-a" href="#new">New In</a></li>
+                    <li><a class="header-a" href="#accessories">Accessories</a></li>
+                    <li><a class="header-a" href="#sign">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <section class="welcome">
+            <div class="conteiner">
+                <h2 class="welcome__subtitle">Find the dress of your dreams and make your wedding a fairytale come true
+                </h2>
+                <p class="welcome__desc">We specialize in providing a personalized and unforgettable wedding shopping
+                    experience for our clients.</p>
+                <a href="#new" class="btn">Shop The Collection</a>
+            </div>
+        </section>
+        <section id="trend" class="trend conteiner">
+            <div class="fade-in">
+            <h3 class="trend__subtitle">The Most Trending Now</h3>
+            <p class="trend__desc">"Unleash Your Inner Glamour with the Latest Wedding Dress Trends"</p>
+            </div>
+            <div class="trend__block">
+                <div class="trend__card">
+                    <img src="./images/trend-item-1.jpg" alt="" class="trend__img">
+                    <h5 class="trend__card-title">Wedding Dress "Monica"</h5>
+                    <p class="trend__card-deck">1500 $ USD</p>
+                </div>
+                <div class="trend__card">
+                    <img src="./images/trend-item-2.jpg" alt="" class="trend__img">
+                    <h5 class="trend__card-title">Wedding Dress "Veronica"</h5>
+                    <p class="trend__card-deck">1200 $ USD</p>
+                </div>
+                <div class="trend__card">
+                    <img src="./images/trend-item-3.jpg" alt="" class="trend__img">
+                    <h5 class="trend__card-title">Wedding Dress "Ella"</h5>
+                    <p class="trend__card-deck">1800 $ USD</p>
+                </div>
+                <div class="trend__card">
+                    <img src="./images/trend-item-4.jpg" alt="" class="trend__img">
+                    <h5 class="trend__card-title">Wedding Dress "Gala"</h5>
+                    <p class="trend__card-deck">2200 $ USD</p>
+                </div>
+            </div>
+        </section>
+        <section id="new" class="new conteiner">
+            <div class="fade-in">
+            <h3 class="new__subtitle">New Collection 2023</h3>
+            <p class="new__desc">"Discover Your Perfect Match: The Latest Trends in Wedding Dresses"</p>
+            </div>
+            <div class="new__content">
+                <img src="./images/new-item-1.jpg" alt="" class="new__img1">
+                <img src="./images/new-item-2.jpg" alt="" class="new__img">
+                <img src="./images/new-item-3.jpg" alt="" class="new__img3">
+            </div>
+        </section>
+        <section id="accessories" class="accessories conteiner">
+            <div class="accessories__text fade-in">
+                <h2 class="accessories__subtitle">Complete Your Bridal Look: Essential Wedding Accessories</h2>
+                <p class="accessories__desc">Comfortable shoes, varies hats, handbag and jewelry you can also purchase
+                    from us. </p>
+                <span class="btn__main">View All</span>
+            </div>
+            <div class="accessories__block">
+                <div class="accessories__card">
+                    <img src="./images/acces-item-1.jpg" alt="" class="accessories__img">
+                    <h5 class="accessories__card-title">Shoes with small heels</h5>
+                    <p class="accessories__card-desc">250 $ USD</p>
+                </div>
+                <div class="accessories__card">
+                    <img src="./images/acces-item-2.jpg" alt="" class="accessories__img">
+                    <h5 class="accessories__card-title">Headband for the bride</h5>
+                    <p class="accessories__card-desc">300 $ USD</p>
+                </div>
+                <div class="accessories__card">
+                    <img src="./images/acces-item-3.jpg" alt="" class="accessories__img">
+                    <h5 class="accessories__card-title">Necklace for the bride</h5>
+                    <p class="accessories__card-desc">400 $ USD</p>
+                </div>
+            </div>
+        </section>
+        <section id="sign" class="sign-up conteiner">
+            <img src="./images/sign-up-item.jpg" alt="" class="sign-up__img">
+            <div class="sign-up__block">
+                <div class="fade-in2">
+                <h2 class="sign-up__subtitle">Sign up for a dress fitting and get a</h2>
+                <h2 class="sign-up__subtitle-color">10% discount</h2>
+                </div>
+                <form action="" class="sign-up__form">
+                    <div class="sign-up__form__info">
+                        <div class="form__group">
+                            <input type="text" id="first" class="form__name" placeholder=" " onchange="checkFirst();" required>
+                            <label class="form__label-name">Name</label>
+                            <div class="col-md-4"><span id="first_Check"></span></div>
+                        </div>
+                        <div class="form__group">
+                            <input type="tel" id="phone" class="form__phone" placeholder=" " onblur="checkPhone();" required>
+                            <label class="form__label-phone">Phone Number</label>
+                            <div><span id="phone_Check"></span></div>
+                        </div>
+                        <div class="sign-up__date-time">
+                            <input type="date" id="date" value="" class="form__date" required>
+                            <input type="time" id="time" class="form__time" required>
+                        </div>
+                    </div>
+                    <span class="btn__form" onclick="outputData();">Send</span>
+                </form>
+                <div class ="summary" id="summary"></div>
+            </div>
+        </section>
+        <section class="follow conteiner">
+            <div class="fade-in3">
+            <h3 class="folow__subtitle">Follow us in Instagram</h3>
+            <p class="follow__desc">@lamanshStore #Lamansh</p>
+            </div>
+            <div class="follow__block">
+                <img src="./images/follow-item-1.jpg" alt="" class="follow__img">
+                <img src="./images/follow-item-2.jpg" alt="" class="follow__img">
+                <img src="./images/follow-item-3.jpg" alt="" class="follow__img">
+                <img src="./images/follow-item-4.jpg" alt="" class="follow__img">
+                <img src="./images/follow-item-5.jpg" alt="" class="follow__img">
+            </div>
+        </section>
+        <section class="email conteiner email__look">
+            <h3 class="email__subtitle">Stay up to date with our news</h3>
+            <form action="" class="email__block">
+                <div class="form__group">
+                    <input type="email" id="email" class="form__email" placeholder=" " onblur="checkEmail();">
+                    <label class="form__label-email">Enter your email</label>
+                    <div><span id="email_Check"></span></div>
+                </div>
+                <span class="btn__form btn__email" onclick="outputEmail();">Send</span>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__block conteiner">
+            <img src="./images/Logo_footer.svg" alt="" class="footer__logo">
+            <div class="fotter__desc">
+                <p class="fotter__copyright">Lamansh ©Copyright 2023. All rights reserved.
+                </p>
+                <p class="footer__policy">Privacy Policy</p>
+            </div>
+            <div class="footer__contacts">
+                <p class="fotter__phone">+123 456 789</p>
+                <p class="footer__mail">lamanshTeam@gmail.com</p>
+                <div class="icons">
+                    <img src="./images/icons/instagram.svg" alt="" class="icon-1">
+                    <img src="./images/icons/facebook.svg" alt="" class="icon-2">
+                    <img src="./images/icons/twitter.svg" alt="" class="icon-3">
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
